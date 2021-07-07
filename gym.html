@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhi's fitness</title>
+    
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<style>
+    /* css reset*/
+    body{
+    font-family: 'Itim', cursive;
+    margin:0px;
+    padding:0px;
+    background: url('img/bg.jpg');
+    font-weight: bold;
+}
+.left{
+    display: inline-block;
+   /* border: 2px solid red;*/
+    position:absolute;
+    left:21px;
+    top:4px;
+
+}
+.left img{
+    width:84px;
+}
+.left div{
+    text-align: center;
+    color: rgb(59, 201, 206);
+   font-size: 16px;
+}
+.mid{
+    display:block;
+    width: 36%;
+    margin: 20px auto;
+    /*border: 2px solid salmon*/
+}
+.right{
+    position: absolute;
+    right:34px;
+    top:20px;
+    display: inline-block;
+    /*border : 2px solid yellow;*/
+
+}
+.navbar{
+    position:absolute;
+    display: inline-block;
+    left:400px;
+    top:30px;
+    margin: auto;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 17px;
+    
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+   
+
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: gray;
+}
+.btn{
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding:4px 14px;
+    border: 2px solid grey;
+    border-radius:10px ;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Itim', cursive;
+}
+.btn:hover{
+    background-color: lavender;
+}
+.container{
+    border: 2px solid white;
+    margin:144px 62px;
+    padding: 12px 92px;
+    width: 32%;
+    border-radius: 12px;
+
+}
+.formgroup input{
+    text-align: center;
+    display: block;
+    width: 266px;
+    margin: 5px auto;
+    padding: 6px;
+    border: 2px solid black;
+    font-size: 17px;
+    border-radius: 20px;
+    font-family: 'Itim', cursive;
+    color:rgb(89, 87, 87);
+
+}
+.container h1{
+    text-align: center;
+    color: rgb(147, 91, 161);
+}
+.container button{
+    display: block;
+    width: 65%;
+    margin: 20px auto;
+}
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for loggo -->
+        <div class="left">
+          <img src="/img/logo.png" alt="">
+        <div>
+            Vidhi's fitness
+        </div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button> 
+             <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of delhi now!!</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Contact">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
